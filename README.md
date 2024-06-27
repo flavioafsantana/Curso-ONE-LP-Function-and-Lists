@@ -52,6 +52,6 @@ function somaClick() {
     let n1 = prompt('Digite um número');
     let n2 = prompt('Digite outro número');
     let resultado = Number(n1) + Number(n2);
-    alert('A soma dos números é ' + resultado);
+    alert(`${n1} + ${n2} = ${resultado}`);
 }
 ```
