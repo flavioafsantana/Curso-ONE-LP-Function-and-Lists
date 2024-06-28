@@ -1,57 +1,51 @@
 # Curso ONE LP Function and Lists
 ## Interagindo com HTML
-### Desafio 1
+### Desafio 2
 
-Altere o conteúdo da tag h1 com document.querySelector e atribua o seguinte texto: Hora do Desafio.
+1. Criar uma função que exibe "Olá, mundo!" no console.
 ```ruby
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Hora do Desafio';
-```
-Crie uma função que exiba no console a mensagem O botão foi clicado sempre que o botão Console for pressionado.
-#### Adicionamos essa linha no codigo HTML
-```ruby
-<button onclick="consoleClick()" class="button">Console</button>
-```
-#### E criamos a função no js
-```ruby
-function consoleClick() {
-    console.log('O botão foi clicado');
+function olaMundo() {
+    console.log("Olá, mundo!");
 }
+olaMundo();
 ```
-Crie uma função que exiba um alerta com a mensagem: Eu amo JS, sempre que o botão Alerta for pressionado.
-#### Adicionamos essa linha no codigo HTML
+2. Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
 ```ruby
-<button onclick="alertClick()" class="button">Alert</button>
-```
-#### E criamos a função no js
-```ruby
-function alertClick() {
-    alert('Eu amo JS');
+function olaNome(nome) {
+    console.log(`Olá, ${nome}!`);
 }
+olaNome('Flavio');
 ```
-Crie uma função que é executada quando o botão prompt é clicado, perguntando o nome de uma cidade do Brasil. Em seguida, exiba um alerta com a mensagem concatenando a resposta com o texto: Estive em {cidade} e lembrei de você.
-#### Adicionamos essa linha no codigo HTML
+3. Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
 ```ruby
-<button onclick="promptClick()" class="button">Prompt</button>
-```
-#### E criamos a função no js
-```ruby
-function promptClick() {
-    let cidade = prompt('Qual a sua cidade?');
-    alert('Estive em ' + cidade + ' e lembrei de você.');
+function dobreONumero(numero){
+    return numero * 2;
 }
+let resultado = dobreONumero(3);
+console.log(resultado)
 ```
-Ao clicar no botão soma, peça 2 números inteiros e exiba o resultado da soma em um alerta.
-#### Adicionamos essa linha no codigo HTML
+4. Criar uma função que recebe três números como parâmetros e retorna a média deles.
 ```ruby
-<button onclick="somaClick()" class="button">Soma</button>
-```
-#### E criamos a função no js
-```ruby
-function somaClick() {
-    let n1 = prompt('Digite um número');
-    let n2 = prompt('Digite outro número');
-    let resultado = Number(n1) + Number(n2);
-    alert(`${n1} + ${n2} = ${resultado}`);
+function calcularMedia(numero1,numero2,numero3){
+    return (numero1 + numero2 + numero3) / 3;
 }
+let media = calcularMedia(4, 7, 10);
+console.log(media);
 ```
+5. Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+```ruby
+function numeroMaior(numero1,numero2){
+   return a > b ? a : b;
+}
+let maiorNumero = numeroMaior(11,7);
+console.log(maiorNumero);
+```
+6. Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+```ruby
+function quadrado(numero1){
+    return numero1 * numero1;
+}
+let resultado = quadrado(6)
+console.log(resultado);
+```
+
